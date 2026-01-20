@@ -1,5 +1,7 @@
 # YALAA_Configurations
 
+## Notice that only one of the interval arithmetic library is required for yalaa. Hence only build and use one between Filib++, cxsc, or Profil. The examples in this repo are all based on only cxsc only for yalaa. 
+
 # Ubuntu 18.04
 
 ## 1. Build boost library
