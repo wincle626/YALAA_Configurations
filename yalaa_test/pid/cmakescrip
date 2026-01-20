@@ -1,0 +1,1 @@
+cmake ../ -DCMAKE_PREFIX_PATH=/home/ubuntu/yalaa/ -DUSE_CXSC=TRUE -DUSE_FILIB=FALSE -DUSE_PROFIL=FALSE -DCMAKE_INSTALL_PREFIX=/home/ubuntu/yalaa/yalaa_test/a_MultipleEqualPoles_SISO/install

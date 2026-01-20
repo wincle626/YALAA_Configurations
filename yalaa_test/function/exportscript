@@ -1,0 +1,6 @@
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/yalaa/Profil-2.0.8/lib:/home/ubuntu/yalaa/boost_1_81_0/install/lib:/home/ubuntu/yalaa/cxsc-2-5-4/install/lib:/home/ubuntu/yalaa/filibsrc/install/lib:/home/ubuntu/yalaa/yalaa-0.92/install/lib
+
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/ubuntu/yalaa/Profil-2.0.8/include:/home/ubuntu/yalaa/boost_1_81_0/install/include:/home/ubuntu/yalaa/cxsc-2-5-4/install/include:/home/ubuntu/yalaa/filibsrc/install/include:/home/ubuntu/yalaa/yalaa-0.92/install/include
+
+export CXX_INCLUDE_PATH=$CXX_INCLUDE_PATH:/home/ubuntu/yalaa/Profil-2.0.8/include:/home/ubuntu/yalaa/boost_1_81_0/install/include:/home/ubuntu/yalaa/cxsc-2-5-4/install/include:/home/ubuntu/yalaa/filibsrc/install/include:/home/ubuntu/yalaa/yalaa-0.92/install/include
+
