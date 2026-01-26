@@ -90,8 +90,6 @@ build the test cases by including and linking to all those compiled headers and 
 
 # Windows 11 (Visual Studio 2026, Boost v1.82.0)
 
-(Still working on it)
-
 Need to download [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/).
 
 ## 1. Build Boost library (Optional)
