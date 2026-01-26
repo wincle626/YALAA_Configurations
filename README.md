@@ -148,4 +148,4 @@ build the "demo" solution which builds the "yalaa" solution at the same time.
 
 ![alt text](/images/image006.png)
 
-# Please refer to paper "[Yun Wu; Yun Zhang; Anis Hamadouche; João F. C. Mota; Andrew M. Wallace. Automatic Approximation for 1-Dimensional Feedback-Loop Computations: a PID Benchmark. IEEE Sensor Signal Processing for Defence Conference (SSPD) 2022](https://doi.org/10.1109/SSPD54131.2022.9896191)" for more details about the computation validation of PID controller. 
+# Please refer to paper "Yun Wu; Yun Zhang; Anis Hamadouche; João F. C. Mota; Andrew M. Wallace. [Automatic Approximation for 1-Dimensional Feedback-Loop Computations: a PID Benchmark](https://doi.org/10.1109/SSPD54131.2022.9896191). IEEE Sensor Signal Processing for Defence Conference (SSPD) 2022" for more details about the computation validation of PID controller. 
