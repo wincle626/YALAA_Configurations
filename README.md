@@ -83,3 +83,65 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/ubuntu/yalaa/Profil-2.0.8/include:/h
 export CXX_INCLUDE_PATH=$CXX_INCLUDE_PATH:/home/ubuntu/yalaa/Profil-2.0.8/include:/home/ubuntu/yalaa/boost_1_81_0:/home/ubuntu/yalaa/cxsc-2-5-4/install/include:/home/ubuntu/yalaa/filibsrc/install/include:/home/ubuntu/yalaa/yalaa-0.92/install/include
 
 build the test cases by including and linking to all those compiled headers and shared libraries. (Excamples of make files and cmake files are provided in the yalaa_test folder)
+
+# Windows 11 (Visual Studio 2026, Boost v1.82.0)
+
+(Still working on it)
+
+Need to download [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/).
+
+## 1. Build Boost library (Optional)
+
+unzip the boost_1_82_0.zip 
+
+cd boost_1_82_0
+
+./bootstrap.bat
+
+./b2
+
+./b2 --prefix="the path to install"
+
+## 2. Build cxsc library from source
+
+unzip the cxsc-2-5-4.tar.gz to a folder, such as "cxsclib".
+
+use the vs2026 to open the project file "cxsc.sln" in the unzipped root folder.
+
+make sure the following folder is included in the project property "C/C++ --> General --> Additional Include Directories".
+
+![alt text](/images/image002.png)
+
+make sure the project property "C/C++ --> Code Generation --> Runtime Library" is set to "Multi-Threaded (/MT)" for building and using static library. 
+
+![alt text](/images/image001.png)
+
+build cxsc project in vs2026
+
+![alt text](/images/image007.png)
+
+## 3. Build yalaa library from source
+
+unzip the yalaa-master.zip to a folder, such as "yalaa-master".
+
+use the vs2026 to open the project file "trunk.sln" in the unzipped root folder. 
+
+make sure the following folder is included in the project property "C/C++ --> General --> Additional Include Directories" for both "yalaa" and "demo" solution.
+
+![alt text](/images/image003.png)
+
+make sure the project property "C/C++ --> Code Generation --> Runtime Library" is set to "Multi-Threaded (/MT)" for building and using static library for both "yalaa" and "demo" solution. 
+
+![alt text](/images/image001.png)
+
+make sure the following two folders is added to "yalaa" project property "Librarian --> General --> Addtional Library Directories" and "demo" project property "Linker -- > General --> Additional Library Directories"
+
+![alt text](/images/image005.png)
+
+make sure the following folder is added to "demo" project property "Linker -- > Input --> Additional Dependencies"
+
+![alt text](/images/image004.png)
+
+build the "demo" solution which builds the "yalaa" solution at the same time. 
+
+![alt text](/images/image006.png)
